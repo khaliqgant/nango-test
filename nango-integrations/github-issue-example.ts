@@ -4,7 +4,7 @@ const LIMIT = 100;
 
 export default async function fetchData(nango: NangoSync): Promise<void> {
     const repos: any[] = await getAllRepositories(nango);
-    await nango.log('yo test');
+    await nango.log('yo');
 
     for (const repo of repos) {
         const proxyConfig = {
